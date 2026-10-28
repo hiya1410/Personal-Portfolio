@@ -1,0 +1,258 @@
+/* Portfolio styles: navy, white, and gold */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef3f8;
+  color: #12304a;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0b2545;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1.25rem;
+  border-bottom: 4px solid #c9a227;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  margin: 0;
+  color: #f4e4b2;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+h2 {
+  color: #0b2545;
+  border-bottom: 2px solid #c9a227;
+  padding-bottom: 0.35rem;
+}
+
+h3 {
+  color: #123a6b;
+  margin-top: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d5e0ec;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(11, 37, 69, 0.08);
+}
+
+.project-card h3 {
+  margin-bottom: 0.4rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+a {
+  color: #1a4f8b;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #0b2545;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-top: 4px solid #c9a227;
+}
+
+footer a {
+  color: #f4e4b2;
+}
+
+#themeToggle {
+  display: block;
+  margin: 1rem auto 2rem;
+  background-color: #0b2545;
+  color: #ffffff;
+  border: 2px solid #c9a227;
+  border-radius: 6px;
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#themeToggle:hover {
+  background-color: #123a6b;
+}
+
+/* Chatbot */
+.chatbot {
+  padding: 0;
+  overflow: hidden;
+}
+
+.chatbot-header {
+  background-color: #0b2545;
+  color: #f4e4b2;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+}
+
+.chat-messages {
+  height: 260px;
+  overflow-y: auto;
+  padding: 0.85rem 1rem;
+  background-color: #f7fafc;
+}
+
+.chat-message {
+  max-width: 85%;
+  margin-bottom: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
+
+.user-message {
+  margin-left: auto;
+  background-color: #1a4f8b;
+  color: #ffffff;
+}
+
+.bot-message {
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 1px solid #c9a227;
+  color: #12304a;
+}
+
+.chat-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.75rem 1rem 1rem;
+  background-color: #ffffff;
+  border-top: 1px solid #d5e0ec;
+}
+
+.chat-form label {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.chat-form input {
+  flex: 1 1 180px;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #9bb4cc;
+  border-radius: 6px;
+}
+
+#chatSend {
+  background-color: #c9a227;
+  color: #0b2545;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#chatSend:hover {
+  background-color: #ddb83c;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #111;
+  color: white;
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+  color: #f4e4b2;
+}
+
+.dark-mode .card,
+.dark-mode .chat-form,
+.dark-mode .bot-message {
+  background-color: #333;
+  color: white;
+  border-color: #c9a227;
+}
+
+.dark-mode .chat-messages {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .chatbot-header {
+  background-color: #111;
+  color: #f4e4b2;
+}
+
+.dark-mode a,
+.dark-mode footer a {
+  color: #f4e4b2;
+}
+
+.dark-mode .user-message {
+  background-color: #1a4f8b;
+  color: white;
+}
+
+.dark-mode .chat-form input {
+  background-color: #222;
+  color: white;
+  border-color: #c9a227;
+}
+
+.dark-mode #themeToggle {
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 640px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .chat-messages {
+    height: 220px;
+  }
+
+  .chat-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

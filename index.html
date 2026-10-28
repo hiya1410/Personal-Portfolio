@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiya Jain - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Site header: name and student subtitle -->
+  <header>
+    <h1>Hiya Jain</h1>
+    <p class="subtitle">BTech CSE (Core) Student | Aspiring AI Engineer | JECRC University, Jaipur</p>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <div class="card">
+        <p>I am Hiya Jain, a 2nd year (3rd semester) BTech CSE (Core) student at JECRC University, Jaipur, interested in becoming an AI Engineer.</p>
+        <p>
+          I am passionate about ai, python programming amd web development. my goal is to build practical ai solutions, strengthen my problem solving skills, and work on projects that solve real world problems
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills: exactly the six provided skills -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="card">
+        <ul>
+          <li>AI Engineering</li>
+          <li>Python Programming</li>
+          <li>HTML, CSS and JavaScript</li>
+          <li>Prompt Engineering</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects: names, short descriptions, and GitHub links as provided -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <article class="card project-card">
+        <h3>Messy Python</h3>
+        <p>A Python project built using Google Colab.</p>
+        <p>
+          <a href="https://github.com/hiya1410/MESSY-PYTHON" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </p>
+      </article>
+      <article class="card project-card">
+        <h3>Factorial Fibonacci Struct to Dict</h3>
+        <p>A Python project covering factorial, Fibonacci, and struct-to-dict work, built using Google Colab.</p>
+        <p>
+          <a href="https://github.com/hiya1410/factorial-Fibonacci-struct-2-dis" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </p>
+      </article>
+      <article class="card project-card">
+        <h3>Interactive Quiz Application</h3>
+        <p>An interactive quiz application.</p>
+        <p>
+          <a href="https://github.com/hiya1410/quiz" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- Contact details -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:hiya.25bcon2103@jecrcu.edu.in">hiya.25bcon2103@jecrcu.edu.in</a></p>
+        <p>Phone: 7850874096</p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/hiya-jain-86595531a?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener noreferrer">linkedin.com/in/hiya-jain-86595531a</a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/hiya1410" target="_blank" rel="noopener noreferrer">github.com/hiya1410</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Rule-based chatbot (no APIs) -->
+    <section id="chatbot" aria-labelledby="chatbot-heading">
+      <h2 id="chatbot-heading">Chatbot</h2>
+      <div class="chatbot card">
+        <div class="chatbot-header">Portfolio Assistant</div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-form">
+          <label for="chatInput">Message</label>
+          <input type="text" id="chatInput" name="chatInput" autocomplete="off">
+          <button type="button" id="chatSend">Send</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hiya Jain | JECRC University, Jaipur</p>
+    <p>Email: <a href="mailto:hiya.25bcon2103@jecrcu.edu.in">hiya.25bcon2103@jecrcu.edu.in</a></p>
+    <p>Phone: 7850874096</p>
+    <p>
+      <a href="https://www.linkedin.com/in/hiya-jain-86595531a?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      |
+      <a href="https://github.com/hiya1410" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+  <button id="themeToggle">Switch to Dark Mode</button>
+  <script src="script.js"></script>
+</body>
+</html>
